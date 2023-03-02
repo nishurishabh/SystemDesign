@@ -1,0 +1,7 @@
+ The vehicle class is the base class which has a drive function user by child vehicle class.
+ - The Passenger Vehicle needs the normal drive func defined by the base class.
+ - But the sports vehicle needs a special func of drive.
+ - Similarly, other vehicles can come in future which might need same or different Vehicles classes.
+ - If we keep the base drive func in base class. And other classes override the func, many classes might need the same special drive func, so the code
+ will be repeated as code sharing is only possible for the base impl of the drive func.
+ - So, the drive function should be under an interface where each class can inject its own version of drive functionality
